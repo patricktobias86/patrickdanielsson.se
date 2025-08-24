@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
-    githubUsername: process.env.GITHUB_USERNAME || 'zYn',
+    githubUsername: process.env.GITHUB_USERNAME || 'patricktobias86',
     githubToken: process.env.GITHUB_TOKEN || '',
     public: {
       contactEmail: process.env.CONTACT_EMAIL || 'hej@patrickdanielsson.se',

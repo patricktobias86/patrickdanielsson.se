@@ -18,9 +18,18 @@
 - role: Technical Project Manager
   org: Carglass Nordics
   period: "2016"
+  bullets:
+    - "123"
+    - "123"
 - role: Customer Experience Expert
   org: Carglass Sverige
   period: "2009—2015"
+  bullets:
+    - "123"
+    - "123"
 - role: Web Developer
   org: Self-Employed
   period: "2008—2014"
+  bullets:
+    - "123"
+    - "123"

@@ -10,7 +10,7 @@ const { data: repos } = await useFetch('/api/github')
     <p class="text-gray-600 mt-2">Pulled from my GitHub at build time.</p>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
       <a
-        v-for="r in repos?.value?.repos"
+        v-for="r in repos?.repos"
         :key="r.url"
         :href="r.url"
         target="_blank"

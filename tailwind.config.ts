@@ -4,10 +4,10 @@ import type { Config } from 'tailwindcss'
 // with custom brand colours and a soft shadow used throughout the site.
 export default <Partial<Config>>{
   content: [
-    './components/**/*.{vue,js,ts}',
-    './pages/**/*.{vue,js,ts}',
-    './app.vue',
-    './content/**/*.{md,yml}'
+    '~/components/*.{vue,js,ts}',
+    '~/pages/*.{vue,js,ts}',
+    '~/app.vue',
+    './content/*.{md,yml}'
   ],
   theme: {
     extend: {

@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-white text-gray-800">
     <SiteHeader />
     <main class="px-6 md:px-10 lg:px-20">
-      <slot />
+      <NuxtPage />
     </main>
     <SiteFooter />
   </div>
