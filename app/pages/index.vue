@@ -19,6 +19,6 @@ import ContactCta from '~/components/ContactCta.vue'
 
 /* avoid destructuring into undefined; keep data as a ref and guard in template */
 const { data: doc } = await useAsyncData('page-index', () =>
-  queryContent('/').findOne() as Promise<Record<string, any> | null>
+  queryContent('/about').findOne() as Promise<Record<string, any> | null>
 )
 </script>
