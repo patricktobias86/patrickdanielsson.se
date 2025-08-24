@@ -1,0 +1,16 @@
+# Netlify configuration for deploying the Nuxt site. The build command
+# generates a static site into the `.output/public` directory. The Edge
+# functions setting allows Netlify to handle dynamic routes efficiently.
+
+[build]
+  command = "pnpm build"
+  publish = ".output/public"
+  edge_functions = "netlify/edge-functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
