@@ -1,8 +1,8 @@
 <template>
   <div>
     <Hero />
-    <!-- only mount ContentDoc when doc exists to avoid "Failed to resolve component" / runtime destructure errors -->
-    <ContentDoc v-if="doc" :doc="doc" />
+    <!-- render markdown content when doc exists -->
+    <ContentRenderer v-if="doc" :value="doc" />
     <!-- fallback if no doc -->
     <div v-else class="p-6">Content not found.</div>
     <ExperienceTimeline />
