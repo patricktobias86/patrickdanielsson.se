@@ -143,3 +143,6 @@ vite.config.ts.timestamp-*
 .DS_Store
 # Content database
 .data/
+
+# Local Netlify folder
+.netlify

@@ -33,7 +33,7 @@ export default defineEventHandler(async (event: H3Event) => {
 
     // Build a concise array of up to six repositories, mapping only the
     // properties we need on the client.
-    const top = filtered.slice(0, 6).map(r => ({
+    const top = filtered.slice(0, 9).map(r => ({
       name: r.name,
       url: r.html_url,
       desc: r.description || '',

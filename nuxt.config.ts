@@ -37,5 +37,11 @@ export default defineNuxtConfig({
     // Allow GitHub avatars (and other external images) to be optimized by
     // @nuxt/image.
     domains: ['avatars.githubusercontent.com']
+  },
+  content: {
+    database: {
+      type: 'postgres',
+      url: process.env.NETLIFY_DATABASE_URL || ''
+    }
   }
 })
