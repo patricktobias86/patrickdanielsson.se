@@ -15,5 +15,9 @@
     "@nuxtjs/tailwindcss": "^6.9.0",
     "nuxt": "^4.0.0-rc.0",
     "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@iconify-json/material-symbols": "^1.2.33",
+    "@nuxt/icon": "^2.0.0"
   }
 }

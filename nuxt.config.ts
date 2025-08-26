@@ -5,7 +5,7 @@
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-12-01',
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image', '@nuxtjs/mdc'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image', '@nuxtjs/mdc', '@nuxt/icon'],
   app: {
     head: {
       title: 'Patrick Danielsson – Marketing Automation & Tech PM',
