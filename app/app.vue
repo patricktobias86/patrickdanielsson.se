@@ -13,4 +13,17 @@
 // provide the header, footer and wrapper styling for the site.
 import SiteHeader from '~/components/SiteHeader.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
+useSchemaOrg([
+  {
+    "@type": "Person",
+  name: "Patrick Danielsson",
+  description: "I help teams automate marketing, optimize conversion and ship web projects.",
+  sameAs: [
+    "https://github.com/patricktobias86",
+    "https://www.linkedin.com/in/patrick-danielsson",
+    "https://patrickdanielsson.se"
+  ],
+  url: "https://patrickdanielsson.se"
+}
+])
 </script>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import About from '~/components/About.vue';
 import ExperienceCards from '~/components/ExperienceCards.vue'
+defineOgImageComponent('Pergel')
 </script>
 
 <template>

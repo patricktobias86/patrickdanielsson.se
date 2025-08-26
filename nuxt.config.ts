@@ -4,16 +4,21 @@
 // via public and private environment variables.
 
 export default defineNuxtConfig({
+  site: { 
+    url: 'https://patrickdanielsson.se', 
+    name: 'Patrick Danielsson' 
+  }, 
   compatibilityDate: '2024-12-01',
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image', '@nuxtjs/mdc', '@nuxt/icon'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/mdc', '@nuxt/icon', '@nuxtjs/seo', '@nuxt/content'],
   app: {
     head: {
-      title: 'Patrick Danielsson – Marketing Automation & Tech PM',
+      title: 'Patrick Danielsson – MarTech',
       meta: [
         { name: 'description', content: 'Marketing Automation (HubSpot), technical PM, growth & web dev across the Nordics.' },
         { property: 'og:title', content: 'Patrick Danielsson' },
         { property: 'og:description', content: 'Marketing Automation, HubSpot, growth & technical project management.' },
-        { property: 'og:type', content: 'website' }
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: `defineOgImageComponent('Pergel')` }
       ]
     }
   },
@@ -37,5 +42,10 @@ export default defineNuxtConfig({
     // Allow GitHub avatars (and other external images) to be optimized by
     // @nuxt/image.
     domains: ['avatars.githubusercontent.com']
-  }
+  },
+  ogImage: {
+    defaults: {
+      extension: 'jpeg',
+    }
+  },
 })
