@@ -4,21 +4,21 @@
       <h1 class="text-4xl md:text-5xl font-bold leading-tight">
         Marketing Automation &amp; Technical PM
       </h1>
-      <p class="mt-5 text-lg text-gray-600">
+      <p class="mt-5 text-lg text-gray-600 dark:text-gray-300">
         HubSpot automation, growth experiments, and multi-market web delivery across the Nordics.
       </p>
       <div class="mt-8 flex gap-4">
-        <a href="#contact" class="px-5 py-3 rounded-xl bg-black text-white shadow-soft">Start a project</a>
-        <a href="#projects" class="px-5 py-3 rounded-xl border">See my work</a>
+        <a href="#contact" class="px-5 py-3 rounded-xl bg-black text-white shadow-soft dark:bg-white dark:text-black">Start a project</a>
+        <a href="#projects" class="px-5 py-3 rounded-xl border dark:border-gray-700">See my work</a>
       </div>
     </div>
-    <div class="rounded-3xl p-8 border shadow-soft">
+    <div class="rounded-3xl p-8 border dark:border-gray-700 shadow-soft">
       <ul class="space-y-3 text-sm">
         <li><strong>Based in:</strong> {{ runtime.public.location }}</li>
         <li><strong>Email:</strong> <a :href="`mailto:${runtime.public.contactEmail}`" class="underline">{{ runtime.public.contactEmail }}</a></li>
         <li><strong>Phone:</strong> {{ runtime.public.contactPhone }}</li>
       </ul>
-      <p class="mt-6 text-gray-600">Award: Belron Exceptional Customer Service (2016). Education: Media &amp; Webdesign, Jensen Gymnasium.</p>
+      <p class="mt-6 text-gray-600 dark:text-gray-300">Award: Belron Exceptional Customer Service (2016). Education: Media &amp; Webdesign, Jensen Gymnasium.</p>
     </div>
   </section>
 </template>

@@ -7,16 +7,16 @@
       <div
         v-for="(item, i) in itemsToRender"
         :key="i"
-        class="p-6 rounded-3xl border shadow-soft"
+        class="p-6 rounded-3xl border dark:border-gray-700 shadow-soft"
       >
         <div class="flex items-center justify-between">
           <h3 class="font-medium">
-            {{ item.role }} — <span class="text-gray-600">{{ item.org }}</span>
+            {{ item.role }} — <span class="text-gray-600 dark:text-gray-300">{{ item.org }}</span>
           </h3>
-          <span class="text-sm text-gray-500">{{ item.period }}</span>
+          <span class="text-sm text-gray-500 dark:text-gray-400">{{ item.period }}</span>
         </div>
 
-        <ul class="mt-3 list-disc pl-5 space-y-1 text-gray-700">
+        <ul class="mt-3 list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-300">
           <li v-for="(b, j) in item.bullets" :key="j">{{ b }}</li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white text-gray-800">
+  <div :class="[{ dark: isDark }, 'min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100']">
     <SiteHeader />
     <main class="px-6 md:px-10 lg:px-20">
       <NuxtPage />
@@ -13,6 +13,8 @@
 // provide the header, footer and wrapper styling for the site.
 import SiteHeader from '~/components/SiteHeader.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
+import { useTheme } from '~/composables/useTheme'
+const { isDark } = useTheme()
 useSchemaOrg([
   {
     "@type": "Person",
