@@ -1,24 +1,19 @@
+<script setup lang="ts">
+import About from '~/components/About.vue';
+import ExperienceCards from '~/components/ExperienceCards.vue'
+</script>
+
 <template>
+  <main>
   <div>
     <Hero />
-    <!-- render markdown content when doc exists -->
-    <ContentRenderer v-if="doc" :value="doc" />
-    <!-- fallback if no doc -->
-    <div v-else class="p-6">Content not found.</div>
-    <ExperienceTimeline />
+      <section class="max-w-6xl mx-auto py-6">
+        
+      </section>
+    <About />
+    <ExperienceCards />
     <ProjectsGrid />
     <ContactCta />
   </div>
+  </main>
 </template>
-
-<script setup lang="ts">
-import Hero from '~/components/Hero.vue'
-import ExperienceTimeline from '~/components/ExperienceTimeline.vue'
-import ProjectsGrid from '~/components/ProjectsGrid.vue'
-import ContactCta from '~/components/ContactCta.vue'
-
-/* avoid destructuring into undefined; keep data as a ref and guard in template */
-const { data: doc } = await useAsyncData('page-index', () =>
-  queryContent('/about').findOne() as Promise<Record<string, any> | null>
-)
-</script>

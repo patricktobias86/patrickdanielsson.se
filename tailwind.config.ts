@@ -5,9 +5,10 @@ import type { Config } from 'tailwindcss'
 export default <Partial<Config>>{
   content: [
     '~/components/*.{vue,js,ts}',
+    '~/composables/*.{vue,js,ts}',
     '~/pages/*.{vue,js,ts}',
     '~/app.vue',
-    './content/*.{md,yml}'
+
   ],
   theme: {
     extend: {

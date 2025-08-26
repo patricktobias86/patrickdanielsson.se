@@ -5,7 +5,7 @@
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-12-01',
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', '@nuxt/image', '@nuxtjs/mdc'],
   app: {
     head: {
       title: 'Patrick Danielsson – Marketing Automation & Tech PM',
@@ -37,11 +37,5 @@ export default defineNuxtConfig({
     // Allow GitHub avatars (and other external images) to be optimized by
     // @nuxt/image.
     domains: ['avatars.githubusercontent.com']
-  },
-  content: {
-    database: {
-      type: 'postgres',
-      url: process.env.NETLIFY_DATABASE_URL || ''
-    }
   }
 })
