@@ -38,7 +38,7 @@ export function useExperience() {
       role: "Technical Project Manager",
       org: "Carglass Nordics",
       period: "2016",
-      bullets: ["123", "123"],
+      bullets: ["Was tasked to lead the technical implementation during the migration of our customer-facing websites across all four Nordic markets.", "Define and implement a master data model for all four markets."],
     }
   ]
 

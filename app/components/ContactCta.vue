@@ -7,7 +7,7 @@
       </div>
       <div class="mt-6 md:mt-0 flex gap-4">
         <a :href="`mailto:${runtime.public.contactEmail}`" class="px-5 py-3 rounded-xl bg-black text-white">Email me</a>
-        <a href="https://cal.com/" target="_blank" class="px-5 py-3 rounded-xl border">Book a call</a>
+        <a :href="`mailto:${runtime.public.contactEmail}`" target="_blank" class="px-5 py-3 rounded-xl border">Book a call</a>
       </div>
     </div>
   </section>
