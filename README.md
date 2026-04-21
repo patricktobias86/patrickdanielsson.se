@@ -36,3 +36,5 @@ Run the production service with Docker Compose:
 ```bash
 docker compose up -d
 ```
+
+The Compose service exposes port `3000` to the Docker network for Coolify's reverse proxy. It does not bind port `3000` on the host, so multiple Coolify applications can run on the same server without host port conflicts.

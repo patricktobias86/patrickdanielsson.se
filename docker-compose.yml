@@ -3,8 +3,8 @@ services:
     image: node:22-alpine
     working_dir: /app
     command: sh -c "npm ci --legacy-peer-deps && npm run build && node .output/server/index.mjs"
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
     environment:
       HOST: 0.0.0.0
       PORT: 3000
