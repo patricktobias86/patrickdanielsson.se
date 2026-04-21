@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import About from '~/components/About.vue';
 import ExperienceCards from '~/components/ExperienceCards.vue'
+import TechStack from '~/components/TechStack.vue'
 defineOgImageComponent('Pergel')
 </script>
 
@@ -12,6 +13,7 @@ defineOgImageComponent('Pergel')
         
       </section>
     <About />
+    <TechStack />
     <ExperienceCards />
     <ProjectsGrid />
     <ContactCta />

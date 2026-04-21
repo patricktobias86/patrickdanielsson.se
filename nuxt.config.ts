@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       // Pre-render the GitHub API route during build to statically embed the
-      // repository data. This ensures the site can be fully static on Netlify.
+      // repository data so the app can serve it without a live GitHub request.
       routes: ['/api/github']
     }
   },

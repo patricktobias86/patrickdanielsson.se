@@ -1,6 +1,6 @@
 # patrickdanielsson.se
 
-Static site built with [Nuxt 4](https://nuxt.com) and deployed to Netlify.
+Nuxt 4 site built for deployment on Colify.
 
 ## Development
 
@@ -29,3 +29,10 @@ Preview the production build locally:
 npm run preview
 ```
 
+## Deployment
+
+Run the production service with Docker Compose:
+
+```bash
+docker compose up -d
+```
