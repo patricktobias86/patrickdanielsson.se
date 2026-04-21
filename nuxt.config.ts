@@ -31,6 +31,9 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
+    externals: {
+      inline: ['unhead']
+    },
     prerender: {
       // Pre-render the GitHub API route during build to statically embed the
       // repository data so the app can serve it without a live GitHub request.
