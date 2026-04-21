@@ -1,18 +1,19 @@
 services:
   app:
-    image: node:22-alpine
-    working_dir: /app
-    command: sh -c "npm ci --legacy-peer-deps && npm run build && node .output/server/index.mjs"
+    build:
+      context: .
     expose:
       - "3000"
     environment:
       HOST: 0.0.0.0
       PORT: 3000
+      NITRO_HOST: 0.0.0.0
+      NITRO_PORT: 3000
       NODE_ENV: production
-    volumes:
-      - .:/app
-      - node_modules:/app/node_modules
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
     restart: unless-stopped
-
-volumes:
-  node_modules:
