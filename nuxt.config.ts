@@ -27,7 +27,6 @@ export default defineNuxtConfig({
     githubToken: process.env.GITHUB_TOKEN || '',
     public: {
       contactEmail: process.env.CONTACT_EMAIL || 'hej@patrickdanielsson.se',
-      contactPhone: process.env.CONTACT_PHONE || '+46 (0) 76 319 87 58',
       location: 'Stockholm, Sweden'
     }
   },

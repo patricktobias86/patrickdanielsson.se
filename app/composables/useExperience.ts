@@ -10,8 +10,16 @@ export function useExperience() {
   const experience: ExperienceItem[] = [
     {
       role: "Marketing Automation Specialist",
+      org: "Extend Marketing",
+      period: "2026—",
+      bullets: [
+        "Marketing Automation:, CRM, workflows, email, metrics to drive engagement & conversions.",
+      ],
+    },
+    {
+      role: "Marketing Automation Specialist",
       org: "The Incredibly Journey",
-      period: "2023—",
+      period: "2023—2025",
       bullets: [
         "HubSpot automation: workflows, email, metrics to drive engagement & conversions.",
       ],

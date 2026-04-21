@@ -16,7 +16,6 @@
       <ul class="space-y-3 text-sm">
         <li><strong>Based in:</strong> {{ runtime.public.location }}</li>
         <li><strong>Email:</strong> <a :href="`mailto:${runtime.public.contactEmail}`" class="underline">{{ runtime.public.contactEmail }}</a></li>
-        <li><strong>Phone:</strong> {{ runtime.public.contactPhone }}</li>
       </ul>
       <p class="mt-6 text-gray-600 dark:text-gray-300">Award: Belron Exceptional Customer Service (2016). Education: Media &amp; Webdesign, Jensen Gymnasium.</p>
     </div>
