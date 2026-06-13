@@ -12,11 +12,11 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/mdc', '@nuxt/icon', '@nuxtjs/seo', '@nuxt/content'],
   app: {
     head: {
-      title: 'Patrick Danielsson – MarTech',
+      title: 'Patrick Danielsson - Automation, AI Agents & Digital Products',
       meta: [
-        { name: 'description', content: 'Marketing Automation (HubSpot), technical PM, growth & web dev across the Nordics.' },
+        { name: 'description', content: 'Technical product builder creating automation, AI agents, Telegram ecosystems, marketing automation and SaaS products across Nordic markets.' },
         { property: 'og:title', content: 'Patrick Danielsson' },
-        { property: 'og:description', content: 'Marketing Automation, HubSpot, growth & technical project management.' },
+        { property: 'og:description', content: 'Automation architecture, AI systems, SaaS products and technical leadership across Nordic enterprise platforms.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: `defineOgImageComponent('Pergel')` }
       ]

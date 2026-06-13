@@ -5,11 +5,10 @@ import type { Config } from 'tailwindcss'
 export default <Partial<Config>>{
   darkMode: 'class',
   content: [
-    '~/components/*.{vue,js,ts}',
-    '~/composables/*.{vue,js,ts}',
-    '~/pages/*.{vue,js,ts}',
-    '~/app.vue',
-
+    './app/components/**/*.{vue,js,ts}',
+    './app/composables/**/*.{vue,js,ts}',
+    './app/pages/**/*.{vue,js,ts}',
+    './app/app.vue',
   ],
   theme: {
     extend: {

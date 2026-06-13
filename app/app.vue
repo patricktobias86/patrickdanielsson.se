@@ -1,5 +1,5 @@
 <template>
-  <div :class="[{ dark: isDark }, 'min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100']">
+  <div :class="[{ dark: isDark }, 'min-h-screen bg-[#05070d] text-slate-100 antialiased']">
     <SiteHeader />
     <main class="px-6 md:px-10 lg:px-20">
       <NuxtPage />
@@ -19,7 +19,7 @@ useSchemaOrg([
   {
     "@type": "Person",
   name: "Patrick Danielsson",
-  description: "I help teams automate marketing, optimize conversion and ship web projects.",
+  description: "I build automation, AI agents and digital products.",
   sameAs: [
     "https://github.com/patricktobias86",
     "https://www.linkedin.com/in/patrick-danielsson",

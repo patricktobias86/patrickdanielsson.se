@@ -1,13 +1,13 @@
 // /composables/useTheme.ts
 export function useTheme() {
-  const isDark = useState<boolean>('isDark', () => false)
+  const isDark = useState<boolean>('isDark', () => true)
 
   if (process.client) {
     const stored = localStorage.getItem('theme')
     if (stored) {
       isDark.value = stored === 'dark'
     } else {
-      isDark.value = window.matchMedia('(prefers-color-scheme: dark)').matches
+      isDark.value = true
     }
   }
 
