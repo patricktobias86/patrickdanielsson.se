@@ -7,9 +7,11 @@ export default defineNuxtConfig({
   site: { 
     url: 'https://patrickdanielsson.se', 
     name: 'Patrick Danielsson' 
-  }, 
+  },
+
   compatibilityDate: '2024-12-01',
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/mdc', '@nuxt/icon', '@nuxtjs/seo', '@nuxt/content'],
+
   app: {
     head: {
       title: 'Patrick Danielsson - Automation, AI Agents & Digital Products',
@@ -22,6 +24,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   runtimeConfig: {
     githubUsername: process.env.GITHUB_USERNAME || 'patricktobias86',
     githubToken: process.env.GITHUB_TOKEN || '',
@@ -30,6 +33,7 @@ export default defineNuxtConfig({
       location: 'Stockholm, Sweden'
     }
   },
+
   nitro: {
     externals: {
       inline: ['unhead']
@@ -40,17 +44,24 @@ export default defineNuxtConfig({
       routes: ['/api/github']
     }
   },
+
   image: {
     // Allow GitHub avatars (and other external images) to be optimized by
     // @nuxt/image.
     domains: ['avatars.githubusercontent.com']
   },
+
   ogImage: {
     defaults: {
       extension: 'jpeg',
     }
   },
+
   icon: {
     serverBundle: 'remote',
+  },
+
+  devtools: {
+    enabled: false,
   },
 })
