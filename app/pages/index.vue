@@ -20,7 +20,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="overflow-hidden">
+  <div>
     <HeroCommandCenter />
     <ServicesGrid />
     <ProjectsShowcase />

@@ -32,7 +32,7 @@ const signals = [
       <span class="left-[8%] top-[70%]" />
     </div>
 
-    <div class="relative flex flex-col gap-12 pb-16 lg:min-h-[calc(100svh-8rem)] lg:flex-row lg:items-center lg:justify-between">
+    <div class="relative mx-auto flex w-full max-w-7xl flex-col gap-12 pb-16 lg:min-h-[calc(100svh-8rem)] lg:flex-row lg:items-center lg:justify-between">
       <div class="hero-copy max-w-4xl pt-8 lg:pt-0">
         <p class="inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-cyan-100">
           <span class="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(103,232,249,0.9)]" />

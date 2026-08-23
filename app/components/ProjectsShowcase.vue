@@ -15,11 +15,11 @@ const projects = [
     tags: ['CSS-Doodle', 'Animation Engine', 'WebM Export', 'Telegram Integration'],
   },
   {
-    name: 'BotifyModBot',
-    url: 'https://botifymodb.xyz',
-    category: 'Telegram Moderation Platform',
-    description: 'Automation-first moderation tooling that turns community operations into measurable workflows.',
-    tags: ['Node-RED', 'Automation', 'Moderation', 'Analytics'],
+    name: 'Sheets to JSON',
+    url: 'https://sheets.primehosting.dev/',
+    category: 'Google Sheets API',
+    description: 'Convert any Google Sheet into a JSON API URL and preview the data instantly.',
+    tags: ['Google Sheets', 'JSON', 'API', 'Open Source'],
   },
   {
     name: 'GIF Directory',
@@ -32,7 +32,7 @@ const projects = [
 </script>
 
 <template>
-  <section id="projects" class="py-20 sm:py-28" aria-labelledby="projects-title">
+  <section id="projects" class="mx-auto max-w-7xl py-20 sm:py-28" aria-labelledby="projects-title">
     <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
       <div class="max-w-3xl">
         <p class="text-sm font-medium uppercase tracking-[0.22em] text-cyan-200/80">Featured Projects</p>

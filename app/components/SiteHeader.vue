@@ -10,20 +10,7 @@
         <NuxtLink to="/#work" class="hidden rounded-full px-3 py-2 transition hover:bg-white/[0.06] hover:text-white md:inline-flex">Timeline</NuxtLink>
         <NuxtLink to="/#projects" class="rounded-full px-3 py-2 transition hover:bg-white/[0.06] hover:text-white">Projects</NuxtLink>
         <NuxtLink to="/#contact" class="rounded-full bg-white px-4 py-2 font-semibold text-slate-950 transition hover:bg-cyan-100">Contact</NuxtLink>
-        <button
-          type="button"
-          class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-slate-300 transition hover:border-cyan-300/35 hover:text-white"
-          :aria-label="isDark ? 'Use light theme' : 'Use dark theme'"
-          @click="toggleTheme"
-        >
-          <Icon :name="isDark ? 'material-symbols:dark-mode-rounded' : 'material-symbols:light-mode-rounded'" class="h-5 w-5" />
-        </button>
       </nav>
     </div>
   </header>
 </template>
-
-<script setup lang="ts">
-import { useTheme } from '~/composables/useTheme'
-const { isDark, toggleTheme } = useTheme()
-</script>

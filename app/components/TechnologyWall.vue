@@ -47,7 +47,7 @@ const tools = categories.flatMap((category) =>
 </script>
 
 <template>
-  <section id="tech-stack" class="relative py-20 sm:py-28" aria-labelledby="tech-title">
+  <section id="tech-stack" class="relative mx-auto max-w-7xl py-20 sm:py-28" aria-labelledby="tech-title">
     <div class="absolute left-1/2 top-24 -z-10 h-72 w-[min(42rem,90vw)] -translate-x-1/2 rounded-[45%_55%_60%_40%] bg-[#f2cf91]/10 blur-3xl" />
 
     <div class="relative max-w-4xl">

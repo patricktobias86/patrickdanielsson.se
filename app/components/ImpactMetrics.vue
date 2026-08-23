@@ -10,7 +10,7 @@ const metrics = [
 <template>
   <section class="relative -mx-6 overflow-hidden border-y border-white/10 bg-white/[0.035] px-6 py-16 md:-mx-10 md:px-10 lg:-mx-20 lg:px-20">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(34,211,238,0.12),transparent_35%),radial-gradient(circle_at_80%_40%,rgba(16,185,129,0.10),transparent_32%)]" />
-    <div class="relative grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="relative mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
       <div
         v-for="metric in metrics"
         :key="metric.label"

@@ -1,5 +1,5 @@
 <template>
-  <div :class="[{ dark: isDark }, 'min-h-screen bg-[#05070d] text-slate-100 antialiased']">
+  <div :class="[{ dark: isDark }, 'min-h-screen overflow-x-hidden bg-[#05070d] text-slate-100 antialiased']">
     <SiteHeader />
     <main class="px-6 md:px-10 lg:px-20">
       <NuxtPage />

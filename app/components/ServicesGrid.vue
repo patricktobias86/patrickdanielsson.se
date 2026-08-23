@@ -28,7 +28,7 @@ const services = [
 </script>
 
 <template>
-  <section id="services" class="py-20 sm:py-28" aria-labelledby="services-title">
+  <section id="services" class="mx-auto max-w-7xl py-20 sm:py-28" aria-labelledby="services-title">
     <div class="max-w-3xl">
       <p class="text-sm font-medium uppercase tracking-[0.22em] text-cyan-200/80">What I Do</p>
       <h2 id="services-title" class="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
