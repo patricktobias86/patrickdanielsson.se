@@ -1,6 +1,6 @@
 <template>
   <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 px-6 backdrop-blur-xl md:px-10 lg:px-20">
-    <div class="mx-auto flex max-w-7xl items-center justify-between py-4">
+    <div class="flex items-center justify-between py-4">
       <NuxtLink to="/" class="flex items-center gap-3 font-semibold tracking-tight text-white">
         <span class="flex h-9 w-9 items-center justify-center rounded-2xl border border-cyan-300/25 bg-cyan-300/10 text-xs text-cyan-100">PD</span>
         <span class="hidden sm:inline">Patrick Danielsson</span>

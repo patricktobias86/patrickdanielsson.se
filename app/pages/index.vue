@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import HeroCommandCenter from '~/components/HeroCommandCenter.vue'
 import ImpactMetrics from '~/components/ImpactMetrics.vue'
-import LiveActivity from '~/components/LiveActivity.vue'
 import ProjectsShowcase from '~/components/ProjectsShowcase.vue'
 import ServicesGrid from '~/components/ServicesGrid.vue'
 import TechnologyWall from '~/components/TechnologyWall.vue'
@@ -28,7 +27,6 @@ useSeoMeta({
     <TimelineSection />
     <ImpactMetrics />
     <TechnologyWall />
-    <LiveActivity />
     <ContactCta />
   </div>
 </template>

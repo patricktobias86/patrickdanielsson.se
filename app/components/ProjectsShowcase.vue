@@ -1,25 +1,29 @@
 <script setup lang="ts">
 const projects = [
   {
-    name: 'TGO',
-    category: 'Premium Shortlink Platform',
-    description: 'A product-grade link platform built around branded domains, API-first workflows and monetizable usage layers.',
-    tags: ['Custom Domains', 'Analytics', 'API', 'Subscriptions'],
+    name: '1132 Fixer',
+    url: 'https://1132-fixer.xyz',
+    category: 'macOS Utility',
+    description: 'A focused macOS utility for resetting Zoom local data and relaunching it in the required sandbox mode.',
+    tags: ['macOS', 'Swift', 'Zoom', 'Diagnostics'],
   },
   {
-    name: 'Loop Generator',
+    name: 'Emoji Generator',
+    url: 'https://t.me/EmojiGeneratorBot',
     category: 'Telegram Emoji Creation Platform',
     description: 'A creation engine for animated emoji loops with export flows tuned for Telegram ecosystems.',
     tags: ['CSS-Doodle', 'Animation Engine', 'WebM Export', 'Telegram Integration'],
   },
   {
     name: 'BotifyModBot',
+    url: 'https://botifymodb.xyz',
     category: 'Telegram Moderation Platform',
     description: 'Automation-first moderation tooling that turns community operations into measurable workflows.',
     tags: ['Node-RED', 'Automation', 'Moderation', 'Analytics'],
   },
   {
     name: 'GIF Directory',
+    url: 'https://gif.directory',
     category: 'Desktop Media Management App',
     description: 'A focused desktop utility for organizing, finding and reusing media assets across daily workflows.',
     tags: ['Tauri', 'Cross Platform', 'Media Library', 'Productivity'],
@@ -28,7 +32,7 @@ const projects = [
 </script>
 
 <template>
-  <section id="projects" class="mx-auto max-w-7xl py-20 sm:py-28" aria-labelledby="projects-title">
+  <section id="projects" class="py-20 sm:py-28" aria-labelledby="projects-title">
     <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
       <div class="max-w-3xl">
         <p class="text-sm font-medium uppercase tracking-[0.22em] text-cyan-200/80">Featured Projects</p>

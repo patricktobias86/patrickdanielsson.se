@@ -2,6 +2,7 @@
 const categories = [
   {
     name: 'Automation',
+    icon: 'material-symbols:automation',
     tools: ['HubSpot', 'Node-RED', 'Zapier', 'Make'],
     note: 'Workflow glue, CRM movement, and operational triggers.',
     accent: 'bg-amber-200 text-stone-950',
@@ -10,6 +11,7 @@ const categories = [
   },
   {
     name: 'Development',
+    icon: 'carbon:development',
     tools: ['Nuxt', 'Vue', 'Node.js', 'TypeScript'],
     note: 'Fast product surfaces with enough structure to keep growing.',
     accent: 'bg-stone-100 text-stone-950',
@@ -18,6 +20,7 @@ const categories = [
   },
   {
     name: 'Analytics',
+    icon: 'material-symbols:analytics',
     tools: ['GA4', 'Looker Studio', 'Google Tag Manager'],
     note: 'Readable measurement for the decisions that actually matter.',
     accent: 'bg-rose-200 text-stone-950',
@@ -26,6 +29,7 @@ const categories = [
   },
   {
     name: 'AI',
+    icon: 'mingcute:ai-fill',
     tools: ['OpenAI', 'Agents', 'Prompt Engineering'],
     note: 'Agentic helpers, structured prompts, and human-in-the-loop systems.',
     accent: 'bg-lime-200 text-stone-950',
@@ -43,7 +47,7 @@ const tools = categories.flatMap((category) =>
 </script>
 
 <template>
-  <section id="tech-stack" class="relative mx-auto max-w-7xl py-20 sm:py-28" aria-labelledby="tech-title">
+  <section id="tech-stack" class="relative py-20 sm:py-28" aria-labelledby="tech-title">
     <div class="absolute left-1/2 top-24 -z-10 h-72 w-[min(42rem,90vw)] -translate-x-1/2 rounded-[45%_55%_60%_40%] bg-[#f2cf91]/10 blur-3xl" />
 
     <div class="relative max-w-4xl">
@@ -78,7 +82,7 @@ const tools = categories.flatMap((category) =>
               {{ category.note }}
             </h3>
           </div>
-          <Icon name="material-symbols:category-rounded" class="mt-1 h-6 w-6 shrink-0 text-amber-100/80" />
+          <Icon :name="category.icon" class="mt-1 h-6 w-6 shrink-0 text-black" />
         </div>
         <div class="relative -ml-3 mt-8 flex flex-wrap gap-2 sm:-ml-6">
           <span
@@ -92,22 +96,33 @@ const tools = categories.flatMap((category) =>
       </article>
     </div>
 
-    <div class="mt-14 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-      <div class="flex min-w-max animate-[tech-drift_28s_linear_infinite] gap-3 pr-6 hover:[animation-play-state:paused]">
-        <span
-          v-for="(tool, index) in [...tools, ...tools]"
-          :key="`${tool.name}-${index}`"
-          class="rounded-full border border-stone-100/10 bg-stone-100 px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-black/10"
+    <div class="relative left-1/2 mt-14 w-screen -translate-x-1/2 overflow-hidden py-4">
+      <div class="experience-feed flex w-max hover:[animation-play-state:paused]">
+        <div
+          v-for="copy in 2"
+          :key="copy"
+          :aria-hidden="copy === 2"
+          class="flex shrink-0 gap-3 pr-3"
         >
-          {{ tool.name }}
-          <span class="ml-2 text-stone-500">{{ tool.category }}</span>
-        </span>
+          <span
+            v-for="tool in tools"
+            :key="`${copy}-${tool.name}`"
+            class="rounded-full border border-stone-100/10 bg-stone-100 px-5 py-3 text-sm font-semibold text-stone-950 shadow-xl shadow-black/10"
+          >
+            {{ tool.name }}
+            <span class="ml-2 text-stone-500">{{ tool.category }}</span>
+          </span>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
+.experience-feed {
+  animation: tech-drift 28s linear infinite;
+}
+
 @keyframes tech-drift {
   from {
     transform: translateX(0);
@@ -115,6 +130,12 @@ const tools = categories.flatMap((category) =>
 
   to {
     transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-feed {
+    animation-play-state: paused;
   }
 }
 </style>

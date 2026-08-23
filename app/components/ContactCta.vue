@@ -3,7 +3,7 @@ const runtime = useRuntimeConfig()
 </script>
 
 <template>
-  <section id="contact" class="mx-auto max-w-7xl pb-24 pt-12 sm:pb-32" aria-labelledby="contact-title">
+  <section id="contact" class="pb-24 pt-12 sm:pb-32" aria-labelledby="contact-title">
     <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.055] p-8 shadow-[0_30px_120px_rgba(0,0,0,0.32)] backdrop-blur sm:p-10 lg:p-12">
       <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(34,211,238,0.16),transparent_34%),radial-gradient(circle_at_90%_60%,rgba(139,92,246,0.12),transparent_30%)]" />
       <div class="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">

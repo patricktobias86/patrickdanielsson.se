@@ -1,6 +1,7 @@
 <script setup lang="ts">
 defineProps<{
   name: string
+  url: string
   category: string
   description: string
   tags: string[]
@@ -8,7 +9,10 @@ defineProps<{
 </script>
 
 <template>
-  <article
+  <a
+    :href="url"
+    target="_blank"
+    rel="noopener noreferrer"
     class="group relative flex min-h-80 flex-col overflow-hidden rounded-3xl border border-white/10 bg-slate-950/55 p-6 shadow-[0_28px_100px_rgba(0,0,0,0.28)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-300/30"
   >
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(34,211,238,0.14),transparent_34%),radial-gradient(circle_at_90%_70%,rgba(139,92,246,0.12),transparent_28%)] opacity-70 transition group-hover:opacity-100" />
@@ -36,5 +40,5 @@ defineProps<{
         </span>
       </div>
     </div>
-  </article>
+  </a>
 </template>

@@ -36,7 +36,7 @@ const timeline = [
 </script>
 
 <template>
-  <section id="work" class="mx-auto max-w-7xl py-20 sm:py-28" aria-labelledby="timeline-title">
+  <section id="work" class="py-20 sm:py-28" aria-labelledby="timeline-title">
     <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
       <div class="lg:sticky lg:top-28">
         <p class="text-sm font-medium uppercase tracking-[0.22em] text-cyan-200/80">Experience Timeline</p>
