@@ -10,6 +10,6 @@
   </div>
 </template>
 <script setup lang="ts">
-defineOgImageComponent('Pergel')
+defineOgImage('Pergel')
 import SiteHeader from '~/components/SiteHeader.vue'
 </script>

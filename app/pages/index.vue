@@ -8,7 +8,7 @@ import TechnologyWall from '~/components/TechnologyWall.vue'
 import TimelineSection from '~/components/TimelineSection.vue'
 import ContactCta from '~/components/ContactCta.vue'
 
-defineOgImageComponent('Pergel')
+defineOgImage('Pergel')
 
 useSeoMeta({
   title: 'Patrick Danielsson - Automation, AI Agents & Digital Products',
