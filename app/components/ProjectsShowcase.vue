@@ -2,6 +2,7 @@
 const projects = [
   {
     name: '1132 Fixer',
+    logo: '/1132-fixer.png',
     url: 'https://1132-fixer.xyz',
     category: 'macOS Utility',
     description: 'A focused macOS utility for resetting Zoom local data and relaunching it in the required sandbox mode.',
@@ -9,6 +10,7 @@ const projects = [
   },
   {
     name: 'Emoji Generator',
+    logo: '/emoji-generator.png',
     url: 'https://t.me/EmojiGeneratorBot',
     category: 'Telegram Emoji Creation Platform',
     description: 'A creation engine for animated emoji loops with export flows tuned for Telegram ecosystems.',
@@ -16,6 +18,7 @@ const projects = [
   },
   {
     name: 'Sheets to JSON',
+    logo: '/sheets-to-json.png',
     url: 'https://sheets.primehosting.dev/',
     category: 'Google Sheets API',
     description: 'Convert any Google Sheet into a JSON API URL and preview the data instantly.',
@@ -23,6 +26,7 @@ const projects = [
   },
   {
     name: 'GIF Directory',
+    logo: '/gif-directory.png',
     url: 'https://gif.directory',
     category: 'Desktop Media Management App',
     description: 'A focused desktop utility for organizing, finding and reusing media assets across daily workflows.',
