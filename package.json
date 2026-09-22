@@ -9,29 +9,29 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@nuxt/content": "^3.15.2",
+    "@nuxt/content": "^3.16.0",
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/image": "^2.1.0",
     "@nuxtjs/mdc": "^0.23.1",
-    "@nuxtjs/seo": "^5.3.14",
+    "@nuxtjs/seo": "^5.3.16",
     "@nuxtjs/tailwindcss": "^6.14.0",
-    "@takumi-rs/core": "^2.11.0",
-    "better-sqlite3": "^12.11.1",
+    "@takumi-rs/core": "^2.14.0",
+    "better-sqlite3": "^13.0.3",
     "nuxt": "^4.5.2",
-    "nuxt-og-image": "^6.7.8",
-    "nuxt-schema-org": "^6.3.0",
-    "vue": "^3.5.41"
+    "nuxt-og-image": "^6.8.0",
+    "nuxt-schema-org": "^6.3.2",
+    "vue": "^3.5.43"
   },
   "devDependencies": {
-    "@iconify-json/logos": "^1.2.13",
-    "@iconify-json/material-symbols": "^1.2.89",
-    "@iconify-json/simple-icons": "^1.2.93",
-    "@nuxt/icon": "^2.5.0",
-    "@unhead/bundler": "^3.4.0",
-    "tailwindcss": "3.4.19",
-    "unhead": "^3.4.0"
+    "@iconify-json/logos": "^1.2.14",
+    "@iconify-json/material-symbols": "^1.2.92",
+    "@iconify-json/simple-icons": "^1.2.96",
+    "@nuxt/icon": "^2.5.1",
+    "@unhead/bundler": "^3.4.1",
+    "tailwindcss": "4.3.3",
+    "unhead": "^3.4.1"
   },
   "overrides": {
-    "tailwindcss": "3.4.19"
+    "tailwindcss": "4.3.3"
   }
 }
