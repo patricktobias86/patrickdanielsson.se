@@ -33,6 +33,8 @@ npm run preview
 
 The project includes a production `Dockerfile` for Coolify/Docker Compose. It builds the Nuxt app into `.output` at image build time, then starts the Nitro server on port `3000`.
 
+The build stage includes Python, Make and a C++ compiler for `better-sqlite3`. These tools are not included in the runtime image. Tailwind CSS 4 uses `@tailwindcss/vite` and `app/assets/css/tailwind.css`, which loads the existing Tailwind configuration.
+
 Run the production service with Docker Compose:
 
 ```bash

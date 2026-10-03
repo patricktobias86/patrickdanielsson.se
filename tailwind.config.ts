@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss'
 
 // Tailwind CSS configuration. This file extends the default color palette
 // with custom brand colours and a soft shadow used throughout the site.
-export default <Partial<Config>>{
+export default {
   darkMode: 'class',
   content: [
     './app/components/**/*.{vue,js,ts}',
@@ -23,4 +23,4 @@ export default <Partial<Config>>{
       }
     }
   }
-}
+} as Partial<Config>

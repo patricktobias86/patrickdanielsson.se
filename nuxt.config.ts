@@ -12,6 +12,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-12-01',
   modules: ['@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/mdc', '@nuxt/icon', '@nuxtjs/seo', '@nuxt/content', '@nuxt/fonts'],
 
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+  },
+
   app: {
     head: {
       title: 'Patrick Danielsson - Automation, AI Agents & Digital Products',

@@ -27,6 +27,7 @@
     "@iconify-json/material-symbols": "^1.2.93",
     "@iconify-json/simple-icons": "^1.2.97",
     "@nuxt/icon": "^2.5.1",
+    "@tailwindcss/vite": "^4.3.3",
     "@unhead/bundler": "^3.4.1",
     "tailwindcss": "4.3.3",
     "unhead": "^3.4.1"

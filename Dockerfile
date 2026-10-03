@@ -4,8 +4,12 @@ WORKDIR /app
 
 ENV NODE_OPTIONS=--max-old-space-size=2048
 
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends python3 make g++ \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY package*.json ./
-RUN npm ci --legacy-peer-deps
+RUN npm ci
 
 COPY . .
 RUN npm run build
